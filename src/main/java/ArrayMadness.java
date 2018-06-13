@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayMadness {
     public static int[] createArrayWithFirstTenOddNumbers() {
         int[] array = new int[10];
@@ -6,6 +8,7 @@ public class ArrayMadness {
             array[i] = x;
             x = x + 2;
         }
+        System.out.println("The first ten odd numbers are " + Arrays.toString(array));
 
         return array;
     }
